@@ -1,0 +1,63 @@
+{
+  "model": "Hierarchical MMM calibrated with hypothetical experimental evidence",
+  "window": [
+    "2021-04-19",
+    "2023-07-17"
+  ],
+  "budget": 160877925.69303036,
+  "bounds": [
+    0.8,
+    1.2
+  ],
+  "objective": "Maximize posterior expected in-window incremental revenue; one common allocation across all draws",
+  "assumptions": [
+    "Historical proportional geo-week flighting within each channel",
+    "Fixed cell-level impression prices and revenue per conversion",
+    "Earlier carryover and controls fixed",
+    "In-window outcomes only; excludes carryout beyond window",
+    "Hypothetical experiment calibration; simulated data; no refit during optimization"
+  ],
+  "baseline_incremental_revenue": {
+    "mean": 273553007.8755162,
+    "lo90": 215772747.6801162,
+    "hi90": 343986629.1464655
+  },
+  "optimized_incremental_revenue": {
+    "mean": 274986833.72989696,
+    "lo90": 216144659.9494771,
+    "hi90": 346411997.9295438
+  },
+  "revenue_gain": {
+    "mean": 1433825.8543808127,
+    "lo90": -2521031.0390384793,
+    "hi90": 5129019.972330053
+  },
+  "conversion_gain": {
+    "mean": 71696018.27411489,
+    "lo90": -126023235.70341489,
+    "hi90": 256425204.81445923
+  },
+  "gain_as_pct_baseline_paid_revenue": {
+    "mean": 0.5127846720095598,
+    "lo90": -0.9442127087854673,
+    "hi90": 1.821897763356748
+  },
+  "probability_revenue_gain_positive": 0.74375,
+  "probability_positive_mcse": 0.007407757199729948,
+  "shadow_marginal_roas": 1.0365115596009449,
+  "optimizer_message": "Optimization terminated successfully",
+  "max_rhat": 1.0007361647257995,
+  "min_ess_bulk": 3012.1052362103837,
+  "checks": [
+    "Fixed total budget and all bounds satisfied",
+    "Baseline matches channel table draw by draw",
+    "Exact gradient agrees with interpolated optimizer gradient",
+    "Exact-gradient KKT conditions verified for concave objective",
+    "Common allocation evaluated on paired posterior draws"
+  ],
+  "sha256": {
+    "reports/illustrative_calibration/posterior_samples.npz": "9ced0d4c561c3cf312eca2a3f30cbc9ea48eb89658e726c8e89fbae123c3b611",
+    "data/geo_all_channels.csv": "d9ee016f7cd21f5c90b50da10a794af91a372b69f881d3caa266edd41fdafbf6",
+    "src/optimize_budget.py": "d45c9438c98e42e8d2bfd5d69e79e17309557be38045c991c888ce4a8b3895cc"
+  }
+}

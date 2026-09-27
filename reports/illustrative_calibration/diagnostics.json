@@ -1,0 +1,22 @@
+{
+  "chains": 4,
+  "warmup_per_chain": 1000,
+  "draws_per_chain": 1000,
+  "elapsed_seconds": 404.33297419548035,
+  "divergences": 0,
+  "max_rhat": 1.007833600788998,
+  "min_bulk_ess": 1063.919179921805,
+  "min_tail_ess": 1501.4117010367893,
+  "max_mcse_over_sd": 0.030520467707338485,
+  "tree_depth_limit_count": 0,
+  "bfmi_per_chain": [
+    0.8548192888449296,
+    0.8124025931711435,
+    0.783040600101687,
+    0.8047830579434062
+  ],
+  "priors_changed": false,
+  "calibration": "Hypothetical Normal experimental likelihood",
+  "holdout_used": false,
+  "original_files_unchanged": true
+}

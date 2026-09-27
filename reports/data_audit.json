@@ -1,0 +1,144 @@
+{
+  "source_type": "official simulated example, not real advertiser data",
+  "sha256": "d9ee016f7cd21f5c90b50da10a794af91a372b69f881d3caa266edd41fdafbf6",
+  "rows": 6240,
+  "geos": 40,
+  "weeks": 156,
+  "first_week": "2021-01-25",
+  "last_week": "2024-01-15",
+  "checks": {
+    "unique_geo_week": true,
+    "complete_geo_week_panel": true,
+    "regular_weekly_dates": true,
+    "no_missing_cells": true,
+    "finite_numeric_values": true,
+    "nonnegative_media_kpi_population": true
+  },
+  "missing_by_column": {
+    "": 0,
+    "geo": 0,
+    "time": 0,
+    "Channel0_impression": 0,
+    "Channel1_impression": 0,
+    "Channel2_impression": 0,
+    "Channel3_impression": 0,
+    "Channel4_impression": 0,
+    "competitor_sales_control": 0,
+    "sentiment_score_control": 0,
+    "Channel0_spend": 0,
+    "Channel1_spend": 0,
+    "Channel2_spend": 0,
+    "Channel3_spend": 0,
+    "Channel4_spend": 0,
+    "Organic_channel0_impression": 0,
+    "Promo": 0,
+    "conversions": 0,
+    "revenue_per_conversion": 0,
+    "population": 0
+  },
+  "numeric_summary": {
+    "Channel0_impression": {
+      "min": 0.0,
+      "max": 5192032.0,
+      "zero_count": 755,
+      "negative_count": 0
+    },
+    "Channel1_impression": {
+      "min": 0.0,
+      "max": 4397540.0,
+      "zero_count": 1742,
+      "negative_count": 0
+    },
+    "Channel2_impression": {
+      "min": 0.0,
+      "max": 5610156.0,
+      "zero_count": 4010,
+      "negative_count": 0
+    },
+    "Channel3_impression": {
+      "min": 0.0,
+      "max": 7635147.0,
+      "zero_count": 169,
+      "negative_count": 0
+    },
+    "Channel4_impression": {
+      "min": 0.0,
+      "max": 6975542.0,
+      "zero_count": 820,
+      "negative_count": 0
+    },
+    "competitor_sales_control": {
+      "min": -4.8256345,
+      "max": 3.924682,
+      "zero_count": 0,
+      "negative_count": 3238
+    },
+    "sentiment_score_control": {
+      "min": -4.230392,
+      "max": 4.320259,
+      "zero_count": 0,
+      "negative_count": 3216
+    },
+    "Channel0_spend": {
+      "min": 0.0,
+      "max": 38071.73,
+      "zero_count": 755,
+      "negative_count": 0
+    },
+    "Channel1_spend": {
+      "min": 0.0,
+      "max": 42397.7,
+      "zero_count": 1742,
+      "negative_count": 0
+    },
+    "Channel2_spend": {
+      "min": 0.0,
+      "max": 41688.645,
+      "zero_count": 4010,
+      "negative_count": 0
+    },
+    "Channel3_spend": {
+      "min": 0.0,
+      "max": 59499.484,
+      "zero_count": 169,
+      "negative_count": 0
+    },
+    "Channel4_spend": {
+      "min": 0.0,
+      "max": 54352.81,
+      "zero_count": 820,
+      "negative_count": 0
+    },
+    "Organic_channel0_impression": {
+      "min": 0.0,
+      "max": 5801781.0,
+      "zero_count": 2075,
+      "negative_count": 0
+    },
+    "Promo": {
+      "min": 0.0,
+      "max": 4.8005548,
+      "zero_count": 2922,
+      "negative_count": 0
+    },
+    "conversions": {
+      "min": 484031.22,
+      "max": 36712692.0,
+      "zero_count": 0,
+      "negative_count": 0
+    },
+    "revenue_per_conversion": {
+      "min": 0.019650234,
+      "max": 0.02036254,
+      "zero_count": 0,
+      "negative_count": 0
+    },
+    "population": {
+      "min": 136670.94,
+      "max": 994048.94,
+      "zero_count": 0,
+      "negative_count": 0
+    }
+  },
+  "interpretation": "Structural checks only; no causal identification or model validation implied."
+}

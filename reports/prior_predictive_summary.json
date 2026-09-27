@@ -1,0 +1,150 @@
+{
+  "seed": 20260925,
+  "draws": 1000,
+  "training_weeks": 130,
+  "warmup_weeks_excluded": 12,
+  "effective_training_weeks": 118,
+  "holdout_weeks": 26,
+  "train_end": "2023-07-17",
+  "holdout_start": "2023-07-24",
+  "outcome_per_capita_scale": 19.29416476242002,
+  "media_per_capita_scales": [
+    1.669707403732235,
+    1.1587212446964996,
+    1.0387683409319193,
+    3.239957031959369,
+    1.9085461818323148
+  ],
+  "control_centers": [
+    -0.11334547353826924,
+    -0.07976080377884616,
+    0.45899198798173074,
+    0.90856659809636
+  ],
+  "control_sds": [
+    1.21382400701702,
+    1.1760044639210987,
+    0.6688615333988771,
+    1.0565131671271606
+  ],
+  "prior_predictive_negative_cell_fraction": 0.011969915254237289,
+  "prior_predictive_cell_fraction_above_3x_training_mean_per_capita": 0.0001434322033898305,
+  "mean_paid_component_scaled_quantiles_5_50_95": [
+    0.2201426271123558,
+    0.34618638754421155,
+    0.5586027817285268
+  ],
+  "status": "Prior simulation only. No posterior, no calibrated causal effects, no holdout evaluation.",
+  "caveat": "Priors use training-outcome scaling; this is data-informed scale elicitation, not a fully data-independent prior check.",
+  "diagnostic_total_draw_cells": 4720000,
+  "negative_expected_outcome_fraction": 0.008054661016949153,
+  "negative_prediction_cross_counts": {
+    "mu_negative_y_negative": 31455,
+    "mu_nonnegative_y_negative": 25043,
+    "mu_negative_y_nonnegative": 6563,
+    "mu_nonnegative_y_nonnegative": 4656939
+  },
+  "negative_predictions_with_nonnegative_mean_share": 0.44325462848242414,
+  "observed_training_negative_fraction": 0.0,
+  "distribution_quantiles": {
+    "observed": [
+      0.12554955412823404,
+      0.25799333740796887,
+      0.48194799329852483,
+      1.000891037079971,
+      1.545868640551554,
+      1.8064590613229896,
+      2.2873921626379494
+    ],
+    "prior_expected": [
+      -1.6527239970089882,
+      0.038283409080146144,
+      0.3345489100914345,
+      0.9634072137698758,
+      1.6194979852258016,
+      1.96668796686267,
+      4.672895342011713
+    ],
+    "prior_predictive": [
+      -1.714674363635002,
+      -0.03339146776060708,
+      0.28503612646326,
+      0.963896886599481,
+      1.668290773956672,
+      2.0316772940111703,
+      4.75198112004631
+    ]
+  },
+  "component_names": [
+    "Regional baseline",
+    "Paid media (all channels)",
+    "Controls (combined)",
+    "Trend + seasonality",
+    "Observation noise"
+  ],
+  "component_summaries": {
+    "All draw x region-week cells": {
+      "q05": [
+        0.15876664460859,
+        0.16206722963280867,
+        -0.3239612395760784,
+        -0.1828837291924708,
+        -0.2460427110481396
+      ],
+      "median": [
+        0.6069020742488342,
+        0.33628219147057753,
+        -0.00040948691113222623,
+        0.0002185227354776101,
+        2.157957204595995e-05
+      ],
+      "q95": [
+        1.0547698061099373,
+        0.6450169949691631,
+        0.32427709736254634,
+        0.18225383288047037,
+        0.24632583389024482
+      ],
+      "mean": [
+        0.606689151474526,
+        0.36161331649611755,
+        6.804895028392864e-05,
+        5.392702701914278e-05,
+        0.00011339165079630613
+      ],
+      "cells": 4720000
+    },
+    "Only cells with negative expected outcome": {
+      "q05": [
+        -0.6184561600479261,
+        0.1252428032443613,
+        -0.954088870930355,
+        -0.24855783505883083,
+        -0.2332034294697561
+      ],
+      "median": [
+        -0.028088519054124295,
+        0.2652072240131078,
+        -0.30076691751226203,
+        -0.06544508006910799,
+        5.104155265556187e-06
+      ],
+      "q95": [
+        0.49232958355795914,
+        0.48707986556042937,
+        0.0622831198769986,
+        0.1009443022249044,
+        0.23187356923041078
+      ],
+      "mean": [
+        -0.034301972397099055,
+        0.28005140331478834,
+        -0.34948912733704546,
+        -0.06717098097764665,
+        0.0002776552659634084
+      ],
+      "cells": 38018
+    }
+  },
+  "diagnostic_note": "Equal cell weighting; prior draws share parameters across cells, so cells are not independent trials. Conditional component shifts are descriptive, not causal blame. Quantiles of components do not add to quantiles of totals."
+}

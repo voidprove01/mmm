@@ -1,0 +1,94 @@
+[
+  {
+    "chains": 4,
+    "warmup_per_chain": 1000,
+    "draws_per_chain": 1000,
+    "elapsed_seconds": null,
+    "target_accept": 0.9,
+    "divergences": 2,
+    "max_rhat": 1.008311,
+    "min_bulk_ess": 866.449204,
+    "min_tail_ess": 1166.491098,
+    "max_mcse_over_sd": 0.033945958248680415,
+    "rhat_ge_1_01_count": 0,
+    "tree_depth_limit_count": 0,
+    "bfmi_per_chain": [
+      0.7717180909166786,
+      0.7817705168531579,
+      0.7889117939694721,
+      0.8589310212111381
+    ],
+    "training_observations": 4720,
+    "holdout_used": false,
+    "priors_changed": false,
+    "parameterization": "noncentered alpha and log beta; same priors as prior predictive model",
+    "versions": {
+      "numpyro": "0.22.0",
+      "jax": "0.11.2",
+      "arviz": "0.22.0"
+    },
+    "timing_note": "Initial timer measured asynchronous dispatch only; progress log shows approximately 184 seconds. Subsequent runs explicitly synchronize before timing.",
+    "directory": "mcmc_initial"
+  },
+  {
+    "chains": 4,
+    "warmup_per_chain": 1000,
+    "draws_per_chain": 1000,
+    "elapsed_seconds": 244.1046769618988,
+    "target_accept": 0.95,
+    "divergences": 3,
+    "max_rhat": 1.00774,
+    "min_bulk_ess": 922.401099,
+    "min_tail_ess": 1022.561539,
+    "max_mcse_over_sd": 0.03293024068023145,
+    "rhat_ge_1_01_count": 0,
+    "tree_depth_limit_count": 0,
+    "bfmi_per_chain": [
+      0.7762385065271741,
+      0.7793626344480054,
+      0.809580386411344,
+      0.8429179814717487
+    ],
+    "training_observations": 4720,
+    "holdout_used": false,
+    "priors_changed": false,
+    "parameterization": "noncentered alpha and log beta; same priors as prior predictive model",
+    "versions": {
+      "numpyro": "0.22.0",
+      "jax": "0.11.2",
+      "arviz": "0.22.0"
+    },
+    "directory": "mcmc_target95"
+  },
+  {
+    "chains": 4,
+    "warmup_per_chain": 1000,
+    "draws_per_chain": 1000,
+    "elapsed_seconds": 407.04084181785583,
+    "target_accept": 0.99,
+    "dense_hyper": true,
+    "divergences": 0,
+    "max_rhat": 1.005653,
+    "min_bulk_ess": 851.282925,
+    "min_tail_ess": 1211.715575,
+    "max_mcse_over_sd": 0.03527932115963256,
+    "rhat_ge_1_01_count": 0,
+    "tree_depth_limit_count": 0,
+    "bfmi_per_chain": [
+      0.798851136833133,
+      0.7916468735492599,
+      0.8741310559992628,
+      0.7554999516691594
+    ],
+    "training_observations": 4720,
+    "holdout_used": false,
+    "priors_changed": false,
+    "parameterization": "noncentered alpha and log beta; same priors as prior predictive model",
+    "versions": {
+      "numpyro": "0.22.0",
+      "jax": "0.11.2",
+      "arviz": "0.22.0"
+    },
+    "directory": "mcmc"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "chains": 4,
+  "warmup_per_chain": 1000,
+  "draws_per_chain": 1000,
+  "elapsed_seconds": 407.04084181785583,
+  "target_accept": 0.99,
+  "dense_hyper": true,
+  "divergences": 0,
+  "max_rhat": 1.005653,
+  "min_bulk_ess": 851.282925,
+  "min_tail_ess": 1211.715575,
+  "max_mcse_over_sd": 0.03527932115963256,
+  "rhat_ge_1_01_count": 0,
+  "tree_depth_limit_count": 0,
+  "bfmi_per_chain": [
+    0.798851136833133,
+    0.7916468735492599,
+    0.8741310559992628,
+    0.7554999516691594
+  ],
+  "training_observations": 4720,
+  "holdout_used": false,
+  "priors_changed": false,
+  "parameterization": "noncentered alpha and log beta; same priors as prior predictive model",
+  "versions": {
+    "numpyro": "0.22.0",
+    "jax": "0.11.2",
+    "arviz": "0.22.0"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "label": "Hypothetical independent experimental evidence; not measured or derived from v1",
+  "experiment": {
+    "label": "Hypothetical high-information experiment",
+    "observed_incremental_return": 1.2,
+    "standard_error_incremental_return": 0.15,
+    "observed_incremental_revenue": 60450.191517888,
+    "standard_error_incremental_revenue": 7556.273939736,
+    "full_population_incremental_spend": 50375.15959824,
+    "estimand": "Channel2 +20% for eight weeks, revenue over intervention plus twelve followup weeks, all 40 geos",
+    "provenance": "Hypothetical summary estimate and standard error specified for the calibration scenario. Not derived from v1; no real experiment or achieved field precision is claimed.",
+    "rationale": "Evaluate how independent evidence below the original model expectation changes posterior estimates and allocation decisions.",
+    "likelihood": "Normal on experimental return; equivalent to Normal revenue likelihood up to a parameter-independent unit conversion.",
+    "independence": "Hypothetical independent experiment; its summary is used exactly once; v1 outcome data are not added.",
+    "seed": 2026092801
+  },
+  "experiment_return_before": {
+    "mean": 2.1430426660678896,
+    "sd": 0.6854266006314909,
+    "lo90": 1.3391216590114607,
+    "hi90": 3.5289196491328916
+  },
+  "experiment_return_after": {
+    "mean": 1.3091249591284801,
+    "sd": 0.13060806495591937,
+    "lo90": 1.0980015492024806,
+    "hi90": 1.526088742462652
+  },
+  "experiment_return_sd_reduction_pct": 80.94499617674764,
+  "old_optimization_under_old_posterior": {
+    "mean": 2644685.0173407425,
+    "lo90": -1656452.2388536169,
+    "hi90": 6836091.172216248
+  },
+  "new_optimization_under_calibrated_posterior": {
+    "mean": 1433825.8543808127,
+    "lo90": -2521031.0390384793,
+    "hi90": 5129019.972330053
+  },
+  "new_vs_old_policy_under_same_calibrated_posterior": {
+    "mean": 1910.560261870645,
+    "sd": 141414.12508952373,
+    "lo90": -253605.98583567736,
+    "hi90": 202502.159930846
+  },
+  "probability_new_policy_better_under_calibrated_posterior": 0.55875,
+  "diagnostics": {
+    "chains": 4,
+    "warmup_per_chain": 1000,
+    "draws_per_chain": 1000,
+    "elapsed_seconds": 404.33297419548035,
+    "divergences": 0,
+    "max_rhat": 1.007833600788998,
+    "min_bulk_ess": 1063.919179921805,
+    "min_tail_ess": 1501.4117010367893,
+    "max_mcse_over_sd": 0.030520467707338485,
+    "tree_depth_limit_count": 0,
+    "bfmi_per_chain": [
+      0.8548192888449296,
+      0.8124025931711435,
+      0.783040600101687,
+      0.8047830579434062
+    ],
+    "priors_changed": false,
+    "calibration": "Hypothetical Normal experimental likelihood",
+    "holdout_used": false,
+    "original_files_unchanged": true
+  },
+  "causal_validation_claimed": false,
+  "interpretation": "Posterior change is conditional on the hypothetical evidence and its assumed precision and independence. Experiment return differs from historical channel ROAS and marginal ROAS."
+}

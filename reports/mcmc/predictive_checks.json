@@ -1,0 +1,12 @@
+{
+  "predictive_draws": 1000,
+  "posterior_negative_expected_cell_fraction": 0.0,
+  "posterior_negative_predictive_cell_fraction": 0.000948728813559322,
+  "training_cell_90pct_predictive_coverage": 0.901906779661017,
+  "training_rmse_scaled": 0.28163898197472764,
+  "median_region_residual_lag1_correlation": 0.028257236281848494,
+  "derived_max_rhat": 1.003168,
+  "derived_min_bulk_ess": 1167.402528,
+  "derived_min_tail_ess": 1641.005714,
+  "note": "Training checks only. Posterior predictive uses up to 250 evenly spaced draws per chain. No holdout performance or causal validity claimed."
+}

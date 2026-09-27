@@ -1,0 +1,29 @@
+{
+  "posterior": "Historical-data posterior before hypothetical calibration",
+  "draws": 4000,
+  "budget_cu": 160877925.69303036,
+  "decision_window_weeks": 118,
+  "decision_scenario": "Replay the historical training allocation template; not a future forecast",
+  "baseline_allocation_scale": [
+    1.1126326946955691,
+    0.8,
+    1.2,
+    1.0580767267084705,
+    0.8816683262748586
+  ],
+  "evpi_cu": 2755006.1516241725,
+  "no_experiment_evsi_cu": 0,
+  "precision_standard_errors_return": [
+    0.6,
+    0.3,
+    0.15
+  ],
+  "candidate_intervention": "One channel +20% for 8 weeks, 12 followup weeks, all 40 geos",
+  "utility": "Expected in-window revenue; excludes experiment costs, margins and delay costs",
+  "method": "512-node predictive quadrature and likelihood reweighting of 4000 MCMC draws; 256-node and two-chain-group sensitivity checks",
+  "ess_note": "Weight ESS measures concentration, not autocorrelation-adjusted MCMC ESS",
+  "posterior_sha256": "0808fc64847e4bc4c9bb586d4868fae0fda78a5db724be440a42a13ec611ea33",
+  "data_sha256": "d9ee016f7cd21f5c90b50da10a794af91a372b69f881d3caa266edd41fdafbf6",
+  "max_quadrature_change_cu": 7.9639659591484815,
+  "max_predictive_mass_weight_ess_below_100": 0.03555654430414468
+}

@@ -1,0 +1,63 @@
+{
+  "model": "Frozen uncalibrated hierarchical MMM",
+  "window": [
+    "2021-04-19",
+    "2023-07-17"
+  ],
+  "budget": 160877925.69303036,
+  "bounds": [
+    0.8,
+    1.2
+  ],
+  "objective": "Maximize posterior expected in-window incremental revenue; one common allocation across all draws",
+  "assumptions": [
+    "Historical proportional geo-week flighting within each channel",
+    "Fixed cell-level impression prices and revenue per conversion",
+    "Earlier carryover and controls fixed",
+    "In-window outcomes only; excludes carryout beyond window",
+    "No experiment calibration; no model refit; simulated data"
+  ],
+  "baseline_incremental_revenue": {
+    "mean": 278342049.96354127,
+    "lo90": 218764745.31758326,
+    "hi90": 351858727.85501826
+  },
+  "optimized_incremental_revenue": {
+    "mean": 280986734.9808821,
+    "lo90": 219985830.41321844,
+    "hi90": 356249630.13398755
+  },
+  "revenue_gain": {
+    "mean": 2644685.0173407425,
+    "lo90": -1656452.2388536169,
+    "hi90": 6836091.172216248
+  },
+  "conversion_gain": {
+    "mean": 132227170.05208999,
+    "lo90": -82765972.92835401,
+    "hi90": 341727067.6279079
+  },
+  "gain_as_pct_baseline_paid_revenue": {
+    "mean": 0.9360714024615086,
+    "lo90": -0.6169514650760949,
+    "hi90": 2.339486707884114
+  },
+  "probability_revenue_gain_positive": 0.848,
+  "probability_positive_mcse": 0.006693075325223587,
+  "shadow_marginal_roas": 1.0218755706409777,
+  "optimizer_message": "Optimization terminated successfully",
+  "max_rhat": 1.0005320871169534,
+  "min_ess_bulk": 2567.348248811437,
+  "checks": [
+    "Fixed total budget and all bounds satisfied",
+    "Baseline matches channel table draw by draw",
+    "Exact gradient agrees with interpolated optimizer gradient",
+    "Exact-gradient KKT conditions verified for concave objective",
+    "Common allocation evaluated on paired posterior draws"
+  ],
+  "sha256": {
+    "reports/mcmc/posterior_samples.npz": "0808fc64847e4bc4c9bb586d4868fae0fda78a5db724be440a42a13ec611ea33",
+    "data/geo_all_channels.csv": "d9ee016f7cd21f5c90b50da10a794af91a372b69f881d3caa266edd41fdafbf6",
+    "src/optimize_budget.py": "6fea7e813f9c1d44cfffa5d366601ff5eccf1ae38866ecfd78c9a86eb63ebf6f"
+  }
+}

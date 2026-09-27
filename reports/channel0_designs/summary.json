@@ -1,0 +1,26 @@
+{
+  "channel": "Channel0",
+  "intensities_pct": [
+    -20,
+    10,
+    20
+  ],
+  "posterior_draws": 4000,
+  "experiment_weeks": 8,
+  "followup_weeks": 12,
+  "decision_window_weeks": 118,
+  "reference_plus20_spend_cu": 396345.9606114,
+  "common_revenue_standard_errors_cu": [
+    237807.57636684,
+    118903.78818342,
+    59451.89409171
+  ],
+  "likelihood": "Normal(signed incremental revenue, common assumed revenue SE)",
+  "negative_intervention": "Revenue change and spend change are both signed treatment-minus-control differences; negative revenue is a loss, negative spend a saving",
+  "utility": "Gross expected downstream revenue decision value; excludes experiment revenue/costs, margins and delay",
+  "caveat": "Equal revenue noise is a comparison assumption, not demonstrated equal feasibility or experiment cost",
+  "max_quadrature_change_cu": 9.522208131151274,
+  "max_low_weight_ess_probability": 0.016423313909400376,
+  "posterior_sha256": "0808fc64847e4bc4c9bb586d4868fae0fda78a5db724be440a42a13ec611ea33",
+  "data_sha256": "d9ee016f7cd21f5c90b50da10a794af91a372b69f881d3caa266edd41fdafbf6"
+}

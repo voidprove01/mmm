@@ -1,0 +1,26 @@
+{
+  "start": "2021-04-19",
+  "end": "2023-07-17",
+  "weeks": 118,
+  "regions": 40,
+  "posterior_draws": 4000,
+  "observed_revenue": 999143527.596109,
+  "interval": "90% equal-tailed posterior credible interval; central estimate is posterior mean",
+  "intervention": "Remove only in-window exposures; preserve earlier history; evaluate only in-window outcomes.",
+  "marginal": "Derivative at historical spend, scaling each channel geo-week proportionally at fixed cell-level CPM.",
+  "currency": "Unspecified source-data currency unit, assumed common across spend and revenue.",
+  "max_rhat": 1.0016386932403845,
+  "min_ess_bulk": 1543.7611148761262,
+  "max_derivative_check_error": 4.6801451603073474e-11,
+  "checks": [
+    "Spend/exposure positive support matches",
+    "Analytic derivative matches central finite difference in each chain",
+    "Full mean counterfactual matches component effect in each chain",
+    "Nonnegative effects and marginal ROAS <= average ROAS"
+  ],
+  "sha256": {
+    "reports/illustrative_calibration/posterior_samples.npz": "9ced0d4c561c3cf312eca2a3f30cbc9ea48eb89658e726c8e89fbae123c3b611",
+    "data/geo_all_channels.csv": "d9ee016f7cd21f5c90b50da10a794af91a372b69f881d3caa266edd41fdafbf6",
+    "src/channel_results.py": "ab954b3200e51fef2ce544aebe1540c21d8756baf61b97f73952b1af4afef3f8"
+  }
+}

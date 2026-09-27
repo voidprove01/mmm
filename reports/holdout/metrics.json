@@ -1,0 +1,122 @@
+{
+  "metrics": {
+    "MMM": {
+      "rmse_scaled": 0.2974992831648675,
+      "mae_scaled": 0.23773173282795432,
+      "rmse_original": 3321170.6824053456,
+      "mae_original": 2435963.3798431056,
+      "wape": 0.22693586575513452,
+      "bias_scaled": -0.006920970926569798,
+      "aggregate_weekly_rmse": 22131652.477754373,
+      "aggregate_weekly_wape": 0.039941474287536076
+    },
+    "Regional mean": {
+      "rmse_scaled": 0.32307798862117476,
+      "mae_scaled": 0.25348518849799606,
+      "rmse_original": 3597663.9539021784,
+      "mae_original": 2601587.5861517275,
+      "wape": 0.24236551997722505,
+      "bias_scaled": -0.005292647280814246,
+      "aggregate_weekly_rmse": 27114852.04824627,
+      "aggregate_weekly_wape": 0.048739371378926234
+    },
+    "Seasonal naive": {
+      "rmse_scaled": 0.43953998873898276,
+      "mae_scaled": 0.3464042065245022,
+      "rmse_original": 5008919.462516546,
+      "mae_original": 3609498.0824903846,
+      "wape": 0.3362630896135274,
+      "bias_scaled": -0.021939636756878007,
+      "aggregate_weekly_rmse": 38881792.45756723,
+      "aggregate_weekly_wape": 0.07318976844219685
+    }
+  },
+  "coverage": [
+    {
+      "nominal": 0.5,
+      "coverage": 0.4846153846153846,
+      "mean_width_scaled": 0.3884768272722916
+    },
+    {
+      "nominal": 0.8,
+      "coverage": 0.7788461538461539,
+      "mean_width_scaled": 0.7380433599216605
+    },
+    {
+      "nominal": 0.9,
+      "coverage": 0.8817307692307692,
+      "mean_width_scaled": 0.9472078352028078
+    },
+    {
+      "nominal": 0.95,
+      "coverage": 0.9375,
+      "mean_width_scaled": 1.1282765265544732
+    }
+  ],
+  "cells": 1040,
+  "regions": 40,
+  "weeks": 26,
+  "start": "2023-07-24",
+  "end": "2024-01-15",
+  "posterior_draws": 4000,
+  "mean_90pct_interval_score_scaled": 1.2313281423374614,
+  "weekly_aggregate_90pct_coverage": 0.8846153846153846,
+  "weekly_aggregate_90pct_mean_width": 70833259.05230974,
+  "negative_expected_fraction": 0.0,
+  "negative_predictive_fraction": 0.0010016826923076923,
+  "checks": {
+    "holdout_outcomes_do_not_affect_predictions": true,
+    "no_future_media_leakage": true,
+    "all_seasonal_reference_outcomes_in_training": true
+  },
+  "note": "First frozen-model conditional holdout prediction using actual contemporaneous inputs. No refitting. Not causal validation or an advance forecast.",
+  "regions_mmm_beats_regional_mean": 27,
+  "regions_mmm_beats_seasonal_naive": 39,
+  "input_support": [
+    {
+      "kind": "media",
+      "variable": "Channel0",
+      "fraction_outside_own_region_training_range": 0.014423076923076924
+    },
+    {
+      "kind": "media",
+      "variable": "Channel1",
+      "fraction_outside_own_region_training_range": 0.011538461538461539
+    },
+    {
+      "kind": "media",
+      "variable": "Channel2",
+      "fraction_outside_own_region_training_range": 0.0125
+    },
+    {
+      "kind": "media",
+      "variable": "Channel3",
+      "fraction_outside_own_region_training_range": 0.0038461538461538464
+    },
+    {
+      "kind": "media",
+      "variable": "Channel4",
+      "fraction_outside_own_region_training_range": 0.006730769230769231
+    },
+    {
+      "kind": "control",
+      "variable": "competitor",
+      "fraction_outside_own_region_training_range": 0.019230769230769232
+    },
+    {
+      "kind": "control",
+      "variable": "sentiment",
+      "fraction_outside_own_region_training_range": 0.014423076923076924
+    },
+    {
+      "kind": "control",
+      "variable": "Promo",
+      "fraction_outside_own_region_training_range": 0.01826923076923077
+    },
+    {
+      "kind": "control",
+      "variable": "organic",
+      "fraction_outside_own_region_training_range": 0.015384615384615385
+    }
+  ]
+}
