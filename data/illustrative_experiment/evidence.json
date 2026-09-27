@@ -1,0 +1,14 @@
+{
+  "label": "Hypothetical high-information experiment",
+  "observed_incremental_return": 1.2,
+  "standard_error_incremental_return": 0.15,
+  "observed_incremental_revenue": 60450.191517888,
+  "standard_error_incremental_revenue": 7556.273939736,
+  "full_population_incremental_spend": 50375.15959824,
+  "estimand": "Channel2 +20% for eight weeks, revenue over intervention plus twelve followup weeks, all 40 geos",
+  "provenance": "Hypothetical summary estimate and standard error specified for the calibration scenario. Not derived from v1; no real experiment or achieved field precision is claimed.",
+  "rationale": "Evaluate how independent evidence below the original model expectation changes posterior estimates and allocation decisions.",
+  "likelihood": "Normal on experimental return; equivalent to Normal revenue likelihood up to a parameter-independent unit conversion.",
+  "independence": "Hypothetical independent experiment; its summary is used exactly once; v1 outcome data are not added.",
+  "seed": 2026092801
+}
